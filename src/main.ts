@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { Products } from './app/products/products';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,8 @@ import { bootstrapApplication } from '@angular/platform-browser';
       
 
   `,
+  standalone:true,
+  imports:[Products]
 })
 export class App {
   name = 'Angular';
